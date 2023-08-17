@@ -1,1 +1,9 @@
+com\btg\test\pedido\controller\PedidoController.class
+com\btg\test\pedido\repository\PedidoRepository.class
+com\btg\test\pedido\model\Pedido.class
+com\btg\test\pedido\service\PedidoService.class
 com\btg\test\pedido\BtgTestPedidoApplication.class
+com\btg\test\pedido\controller\PedidoControllerImpl.class
+com\btg\test\pedido\service\PedidoServiceImpl.class
+com\btg\test\pedido\ErrorResponse.class
+com\btg\test\pedido\model\Item.class

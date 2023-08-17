@@ -1,8 +1,10 @@
 C:\Projetos\test\btg-test-pedido\src\main\java\com\btg\test\pedido\service\PedidoServiceImpl.java
 C:\Projetos\test\btg-test-pedido\src\main\java\com\btg\test\pedido\controller\PedidoControllerImpl.java
+C:\Projetos\test\btg-test-pedido\src\main\java\com\btg\test\pedido\ErrorResponse.java
 C:\Projetos\test\btg-test-pedido\src\main\java\com\btg\test\pedido\repository\PedidoRepository.java
 C:\Projetos\test\btg-test-pedido\src\main\java\com\btg\test\pedido\controller\PedidoController.java
 C:\Projetos\test\btg-test-pedido\src\main\java\com\btg\test\pedido\model\Item.java
 C:\Projetos\test\btg-test-pedido\src\main\java\com\btg\test\pedido\model\Pedido.java
+C:\Projetos\test\btg-test-pedido\src\main\java\com\btg\test\pedido\QueueConsumer.java
 C:\Projetos\test\btg-test-pedido\src\main\java\com\btg\test\pedido\BtgTestPedidoApplication.java
 C:\Projetos\test\btg-test-pedido\src\main\java\com\btg\test\pedido\service\PedidoService.java

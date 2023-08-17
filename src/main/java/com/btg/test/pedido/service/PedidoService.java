@@ -14,4 +14,6 @@ public interface PedidoService {
     List<Pedido> listar();
 
     Pedido criar(Pedido pedido);
+
+    boolean buscar(Long codigoPedido);
 }

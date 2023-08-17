@@ -4,22 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e73ad710-8a78-4002-b7c3-cd2f03017f3d" name="Changes" comment="Criação Models, Repository e Rotas.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/btg/test/pedido/controller/PedidoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/btg/test/pedido/controller/PedidoControllerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/btg/test/pedido/model/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/btg/test/pedido/model/Pedido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/btg/test/pedido/repository/PedidoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/btg/test/pedido/service/PedidoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/btg/test/pedido/service/PedidoServiceImpl.java" afterDir="false" />
+    <list default="true" id="e73ad710-8a78-4002-b7c3-cd2f03017f3d" name="Changes" comment="Criação READ.Me, Ajustes e Exception.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/btg/test/pedido/QueueConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/btg/test/pedido/exception/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/btg/test/pedido/service/PedidoServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/btg/test/pedido/BtgTestPedidoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/btg/test/pedido/BtgTestPedidoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/btg/test/pedido/controller/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/btg/test/pedido/controller/PedidoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/btg/test/pedido/controller/PedidoControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/btg/test/pedido/controller/PedidoControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/btg/test/pedido/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/btg/test/pedido/model/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/btg/test/pedido/service/PedidoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/btg/test/pedido/service/PedidoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/btg/test/pedido/service/PedidoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/btg/test/pedido/service/PedidoServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/btg-test-pedido-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/btg-test-pedido-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.btg.test.pedido.BtgTestPedidoApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.btg.test.pedido.BtgTestPedidoApplicationTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.btg.test.pedido.BtgTestPedidoApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.btg.test.pedido.BtgTestPedidoApplicationTests.txt" afterDir="false" />
     </list>
@@ -33,6 +37,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -50,6 +55,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2U2F8Ol29SmVQ36pt5HKwfDjsZl" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -61,6 +69,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_opened_file_path": "C:/Projetos/test/btg-test-pedido/src/main/java/com/btg/test/pedido",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
@@ -70,6 +80,12 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projetos\test\btg-test-pedido\src\main\java\com\btg\test\pedido" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.btg.test.pedido.service" />
     </key>
   </component>
   <component name="RunManager" selected="Application.com.btg.test.pedido.BtgTestPedidoApplication">
@@ -91,7 +107,7 @@
       <module name="btg-test-pedido" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.btg.test.pedido.*" />
+          <option name="PATTERN" value="com.btg.test.pedido.exception.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692213758637</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Criação Models, Repository e Rotas.">
+      <created>1692285431141</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692285431141</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,7 +162,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First  Commit - Esqueleto da aplicação" />
     <MESSAGE value="Criação Models, Repository e Rotas." />
-    <option name="LAST_COMMIT_MESSAGE" value="Criação Models, Repository e Rotas." />
+    <MESSAGE value="Criação READ.Me, Ajustes e Exception." />
+    <option name="LAST_COMMIT_MESSAGE" value="Criação READ.Me, Ajustes e Exception." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

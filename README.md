@@ -1,38 +1,55 @@
-# btg-test-pedido
+# API btg-test-pedido 
 
-# Read Me First
-The following was discovered as part of building this project:
+Uma api Java que consiste em um microserviço para processar pedidos e uma API REST para consultar informações sobre os pedidos.
 
-* The original package name 'com.btg-test-pedido' is invalid and this project uses 'com.btgtestpedido' instead.
+## Tecnologias Utilizadas
 
-# Getting Started
+- Java
+- Spring Boot
+- MongoDB
+- RabbitMQ
+- REST API
+- Lombok
+- Docker
 
-### Reference Documentation
-For further reference, please consider the following sections:
+## Funcionalidades
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/3.1.2/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/3.1.2/maven-plugin/reference/html/#build-image)
-* [Spring Data MongoDB](https://docs.spring.io/spring-boot/docs/3.1.2/reference/htmlsingle/index.html#data.nosql.mongodb)
-* [Spring for RabbitMQ](https://docs.spring.io/spring-boot/docs/3.1.2/reference/htmlsingle/index.html#messaging.amqp)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/3.1.2/reference/htmlsingle/index.html#web)
-* [Docker Compose Support](https://docs.spring.io/spring-boot/docs/3.1.2/reference/htmlsingle/index.html#features.docker-compose)
+1. **Microserviço de Processamento de Pedidos:**
+    - O microserviço consome dados de uma fila RabbitMQ contendo informações de pedidos.
+    - Os dados do pedido (código do pedido, código do cliente e itens) são gravados em um banco de dados MongoDB.
+    - Isso permite a criação de registros de pedidos e a coleta de informações sobre os pedidos feitos.
 
-### Guides
-The following guides illustrate how to use some features concretely:
+2. **API REST de Consulta de Informações:**
+    - A API REST fornece endpoints para consultar informações sobre os pedidos.
+    - `api/pedido/`: Retorna lista de pedidos.
+    - `api/pedido/`: Cria pedidos.
+    - `api/pedido/total-valor-pedido/{codigoPedido}`: Retorna o valor total de um pedido.
+    - `api/pedido/quantidade-pedidos-cliente/{codigoCliente}`: Retorna a quantidade de pedidos feitos por um cliente.
+    - `api/pedido/{codigoCliente}`: Retorna a lista de pedidos realizados por um cliente.
 
-* [Accessing Data with MongoDB](https://spring.io/guides/gs/accessing-data-mongodb/)
-* [Messaging with RabbitMQ](https://spring.io/guides/gs/messaging-rabbitmq/)
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
+## Instalação e Configuração
 
-### Docker Compose support
-This project contains a Docker Compose file named `compose.yaml`.
-In this file, the following services have been defined:
+1. Certifique-se de ter o Java e o Maven instalados.
+2. Clone este repositório: `git clone https://github.com/MariChan21/btg-test-pedido.git`
+3. Navegue até o diretório do projeto: `cd aplicacao-gerenciamento-pedidos`
+4. Execute o microserviço e a API REST: `mvn spring-boot:run`
 
-* mongodb: [`mongo:latest`](https://hub.docker.com/_/mongo)
-* rabbitmq: [`rabbitmq:latest`](https://hub.docker.com/_/rabbitmq)
+## Exemplo de Consumo de Dados da Fila RabbitMQ
 
-Please review the tags of the used images and set them to the same as you're running in production.
-
+```json
+{
+  "codigoPedido": 1001,
+  "codigoCliente": 1,
+  "itens": [
+    {
+      "produto": "lápis",
+      "quantidade": 100,
+      "preco": 1.10
+    },
+    {
+      "produto": "caderno",
+      "quantidade": 10,
+      "preco": 1.00
+    }
+  ]
+}

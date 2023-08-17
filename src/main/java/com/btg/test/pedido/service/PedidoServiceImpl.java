@@ -43,4 +43,11 @@ public class PedidoServiceImpl implements PedidoService{
     public Pedido criar(Pedido pedido) {
         return pedidoRepository.save(pedido);
     }
+
+    @Override
+    public boolean buscar(Long codigoPedido) {
+        if(pedidoRepository.findById(codigoPedido) != null)
+            return false;
+        return true;
+    }
 }

@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface PedidoController {
 
-    ResponseEntity<Pedido> criar(Pedido pedido);
+    ResponseEntity<?> criar(Pedido pedido);
 
     ResponseEntity<List<Pedido>> listar();
     ResponseEntity<Float> valorTotalPedido(Long codigoPedido);
